@@ -6,6 +6,7 @@ namespace ChartsExample.Model
 {
     class Person
     {
-        public float Height { get; set; }
+        public double Height { get; set; }
+        public int Id { get; set; }
     }
 }

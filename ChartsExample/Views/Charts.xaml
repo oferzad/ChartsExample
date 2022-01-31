@@ -5,7 +5,11 @@
              x:Class="ChartsExample.Views.Charts">
     <ContentPage.Content>
         <StackLayout>
-            <microcharts:ChartView Chart="{Binding theChart}" HeightRequest="250"/>
+            <Label Text="{Binding Title}" FontSize="Large" HorizontalOptions="Center"></Label>
+            <Label Text="   " FontSize="Large"></Label>
+            <microcharts:ChartView Chart="{Binding MainChart}" HeightRequest="250"/>
+            <Label Text="   " FontSize="Large"></Label>
+            <Button Text="Next Chart" Command="{Binding NextChart}"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

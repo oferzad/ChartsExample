@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using ChartsExample.ViewModels;
 
 namespace ChartsExample.Views
 {
@@ -14,6 +15,7 @@ namespace ChartsExample.Views
     {
         public Charts()
         {
+            this.BindingContext = new ChartsViewModel();
             InitializeComponent();
         }
     }

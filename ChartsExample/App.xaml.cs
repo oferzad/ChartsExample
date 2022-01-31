@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
+using ChartsExample.Views;
 namespace ChartsExample
 {
     public partial class App : Application
@@ -10,7 +10,7 @@ namespace ChartsExample
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Charts();
         }
 
         protected override void OnStart()
